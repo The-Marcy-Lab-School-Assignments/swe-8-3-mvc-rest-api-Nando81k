@@ -1,0 +1,149 @@
+body {
+  background: #f8fafc;
+  color: #222;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#root, .app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  color: #174ea6;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px #b2c6fa33;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+form {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 32px #b2c6fa33, 0 1.5px 8px #174ea611;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 420px;
+  width: 100%;
+  align-items: stretch;
+}
+
+label {
+  color: #174ea6;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  font-size: 1.05rem;
+}
+
+input[type="text"] {
+  background: #f5f7fa;
+  border: 1.5px solid #b2c6fa;
+  border-radius: 6px;
+  color: #222;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  transition: border 0.2s;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"]:focus {
+  border-color: #174ea6;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #174ea6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 8px #b2c6fa33;
+  align-self: center;
+}
+
+button[type="submit"]:hover {
+  background: #2962ff;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+li {
+  background: #fff;
+  border-left: 6px solid #174ea6;
+  border-radius: 14px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 12px #b2c6fa33;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+li:hover {
+  border-left: 6px solid #2962ff;
+  background: #f5f7fa;
+  box-shadow: 0 4px 24px #b2c6fa44;
+}
+
+.book-title {
+  color: #174ea6;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.5px;
+}
+
+.book-author {
+  color: #444;
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+.book-link {
+  color: #174ea6;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: color 0.2s;
+  align-self: flex-start;
+}
+
+.book-link:hover {
+  color: #2962ff;
+  text-decoration: underline;
+}
